@@ -251,14 +251,14 @@ public class ThinDatabaseMetaData extends ThinBase implements DatabaseMetaData {
             row[index++] = null; // BUFFER_LENGTH
             row[index++] = (long) valueMeta.getPrecision(); // DECIMAL_DIGITS
             row[index++] = (long) 10; // NUM_PREC_RADIX
-            row[index++] = DatabaseMetaData.columnNullableUnknown; // NULLABLE
+            row[index++] = (long) DatabaseMetaData.columnNullableUnknown; // NULLABLE
             row[index++] = valueMeta.getComments(); // REMARKS
             row[index++] = null; // COLUMN_DEF
             row[index++] = null; // SQL_DATA_TYPE
             row[index++] = null; // SQL_DATATIME_SUB_
             row[index++] = (long) valueMeta.getLength(); // CHAR_OCTET_LENGTH
             row[index++] = (long) ordinal; // ORDINAL_POSITION
-            row[index++] = ""; // IS_NULLABLE
+            row[index++] = (long) DatabaseMetaData.attributeNullableUnknown; // IS_NULLABLE
             row[index++] = null; // SCOPE_CATALOG
             row[index++] = null; // SCOPE_SCHEMA
             row[index++] = null; // SCOPE_TABLE
