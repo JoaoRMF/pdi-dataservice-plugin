@@ -50,6 +50,7 @@ import org.mockito.Mock;
 import org.mockito.invocation.InvocationOnMock;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.mockito.stubbing.Answer;
+import org.pentaho.di.trans.dataservice.jdbc.api.IThinServiceInformation;
 
 import java.io.IOException;
 import java.net.URLDecoder;
@@ -181,7 +182,7 @@ public class RemoteClientTest {
 
     remoteClient.setResponse( xml );
 
-    ThinServiceInformation serviceInformation = Iterables.getOnlyElement( remoteClient.getServiceInformation() );
+    IThinServiceInformation serviceInformation = Iterables.getOnlyElement( remoteClient.getServiceInformation() );
 
     verify( httpClient ).execute( httpMethodCaptor.capture(), httpContextCaptor.capture() );
     assertThat( httpMethodCaptor.getValue().getURI().toString(), equalTo( url ) );

@@ -43,7 +43,8 @@ import org.pentaho.di.core.util.HttpClientUtil;
 import org.pentaho.di.core.xml.XMLHandler;
 import org.pentaho.di.repository.Repository;
 import org.pentaho.di.trans.dataservice.client.ConnectionAbortingSupport;
-import org.pentaho.di.trans.dataservice.client.DataServiceClientService;
+import org.pentaho.di.trans.dataservice.client.api.DataServiceClientService;
+import org.pentaho.di.trans.dataservice.jdbc.api.IThinServiceInformation;
 import org.pentaho.metastore.api.IMetaStore;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
@@ -119,8 +120,8 @@ class RemoteClient implements DataServiceClientService, ConnectionAbortingSuppor
     }
   }
 
-  @Override public List<ThinServiceInformation> getServiceInformation() throws SQLException {
-    List<ThinServiceInformation> services = Lists.newArrayList();
+  @Override public List<IThinServiceInformation> getServiceInformation() throws SQLException {
+    List<IThinServiceInformation> services = Lists.newArrayList();
 
     try {
       String result = execService( "/listServices" );

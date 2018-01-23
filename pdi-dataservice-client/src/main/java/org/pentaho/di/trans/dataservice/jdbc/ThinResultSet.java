@@ -24,7 +24,7 @@ package org.pentaho.di.trans.dataservice.jdbc;
 
 import org.pentaho.di.core.Const;
 import org.pentaho.di.core.exception.KettleFileException;
-import org.pentaho.di.trans.dataservice.client.DataServiceClientService;
+import org.pentaho.di.trans.dataservice.client.api.DataServiceClientService;
 
 import java.io.DataInputStream;
 import java.io.IOException;

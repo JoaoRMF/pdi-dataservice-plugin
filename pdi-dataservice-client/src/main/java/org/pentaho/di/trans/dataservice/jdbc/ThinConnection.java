@@ -39,7 +39,7 @@ import org.pentaho.di.core.util.HttpClientManager;
 import org.pentaho.di.core.util.HttpClientUtil;
 import org.pentaho.di.i18n.BaseMessages;
 import org.pentaho.di.trans.dataservice.client.ConnectionAbortingSupport;
-import org.pentaho.di.trans.dataservice.client.DataServiceClientService;
+import org.pentaho.di.trans.dataservice.client.api.DataServiceClientService;
 import org.pentaho.di.trans.dataservice.jdbc.annotation.NotSupported;
 
 import java.io.UnsupportedEncodingException;

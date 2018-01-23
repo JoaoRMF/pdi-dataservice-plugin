@@ -23,8 +23,9 @@
 package org.pentaho.di.trans.dataservice.jdbc;
 
 import org.pentaho.di.core.row.RowMetaInterface;
+import org.pentaho.di.trans.dataservice.jdbc.api.IThinServiceInformation;
 
-public class ThinServiceInformation {
+public class ThinServiceInformation implements IThinServiceInformation {
   private String name;
   private RowMetaInterface serviceFields;
 

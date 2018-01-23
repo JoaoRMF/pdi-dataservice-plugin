@@ -30,6 +30,7 @@ import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.pentaho.di.core.lifecycle.LifeEventHandler;
 import org.pentaho.di.repository.Repository;
+import org.pentaho.di.trans.dataservice.client.api.DataServiceClientService;
 import org.pentaho.di.ui.spoon.Spoon;
 import org.pentaho.metastore.api.IMetaStore;
 import org.pentaho.metastore.stores.delegate.DelegatingMetaStore;

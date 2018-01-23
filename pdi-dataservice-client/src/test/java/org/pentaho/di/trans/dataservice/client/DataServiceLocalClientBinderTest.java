@@ -26,6 +26,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.runners.MockitoJUnitRunner;
+import org.pentaho.di.trans.dataservice.client.api.DataServiceClientService;
 import org.pentaho.di.trans.dataservice.jdbc.ThinConnection;
 
 import static junit.framework.TestCase.assertNotSame;

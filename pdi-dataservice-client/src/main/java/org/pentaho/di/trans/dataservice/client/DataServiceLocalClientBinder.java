@@ -22,6 +22,7 @@
 
 package org.pentaho.di.trans.dataservice.client;
 
+import org.pentaho.di.trans.dataservice.client.api.DataServiceClientService;
 import org.pentaho.di.trans.dataservice.jdbc.ThinConnection;
 
 import java.util.concurrent.atomic.AtomicReference;

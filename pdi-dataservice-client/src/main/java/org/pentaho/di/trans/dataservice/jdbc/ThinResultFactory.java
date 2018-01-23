@@ -25,7 +25,7 @@ package org.pentaho.di.trans.dataservice.jdbc;
 import com.google.common.base.Throwables;
 import org.pentaho.di.core.KettleClientEnvironment;
 import org.pentaho.di.core.row.RowMeta;
-import org.pentaho.di.trans.dataservice.client.DataServiceClientService;
+import org.pentaho.di.trans.dataservice.client.api.DataServiceClientService;
 
 import java.io.DataInputStream;
 import java.sql.SQLException;
